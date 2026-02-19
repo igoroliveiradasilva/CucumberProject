@@ -13,8 +13,6 @@ Funcionalidade: Catálogos de cafés
       | name     | Expresso Gelado |
       | price    | R$9,99          |
       | delivery | R$10,00         |
-    E que esse produto custa "R$ 9,99"
-    E que o custo de entrega é de "R$ 10,00"
     Quando inicio a compra desse item
     Então devo ver a página de Checkout com os detalhes do produto
     E o valor total da compra deve ser de "R$ 19,99"

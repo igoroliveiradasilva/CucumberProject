@@ -5,7 +5,7 @@ require_relative './pages/components.rb'
 
 Before do
     @home = HomePage.new
-    @checkout = CheckouuPage.new
+    @checkout = CheckoutPage.new
 
     @popup = Popup.new
 end
