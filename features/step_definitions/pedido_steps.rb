@@ -17,3 +17,11 @@ end
 Quando('por fim finalizo a compra') do
     @checkout.submit
 end
+
+Então('sou redirecionado para a página de confirmação de Pedidos') do
+    @order.assert_order
+end
+
+Então('deve ser informado o seguinte prazo e entrega: {string}') do |delivery_time|
+    @order.assert_delivery_time(delivery_time)
+end
