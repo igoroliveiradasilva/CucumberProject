@@ -7,10 +7,12 @@ Funcionalidade: Catálogos de cafés
     Quando acesso a página principal da Starbugs
     Então eu devo ver uma lista de cafés disponíveis
 
-  @temp
   Cenário: Iniciar a compra de um café
     Dado que estou na página principal da Starbugs
-    E que desejo comprar o café "Expresso Gelado"
+    E que desejo comprar o seguinte produto:
+      | name     | Expresso Gelado |
+      | price    | R$9,99          |
+      | delivery | R$10,00         |
     E que esse produto custa "R$ 9,99"
     E que o custo de entrega é de "R$ 10,00"
     Quando inicio a compra desse item
@@ -20,6 +22,7 @@ Funcionalidade: Catálogos de cafés
   @temp
   Cenário: Café indisponível
     Dado que estou na página principal da Starbugs
-    E que desejo comprar o café "Expresso Cremoso"
+    E que desejo comprar o seguinte produto:
+      | name | Expresso Cremoso |
     Quando inicio a compra desse item
     Então devo ver um popup informando que o produto está indisponível
